@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oppo</title>
+    <title>Sản Phẩm</title>
     <link rel="stylesheet" href="../css/style.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -13,6 +13,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+        crossorigin="anonymous">
+    </script>
+    <script src="../script/script.js"></script>
 </head>
 <body>
     <header>
@@ -166,9 +172,11 @@
             </div>
         </div>
     </header>
-    <!--main-->
+    
+    <!-- main -->
     <main>
-        <h3 class="ct_list">Oppo</h3>
+        <img src="../picture/background1.jpg" alt="" class="banner">
+        <h1 class="ct_list">Sản Phẩm</h1>
         <div class='ct_list'><p right: 90px><label>Lọc sản phẩm</label> 
             <select name="chon" id="chon">
                 <option value=""></option>
@@ -179,7 +187,143 @@
                 <option>Dưới 10 triệu</option>
                 <option value="">Trên 10 triệu</option>
             </select>
+            <span><p left:100px><label for="">Chọn hãng</label>
+                <input type="radio" name="dienthoaiiPhone">iPhone
+                <input type="radio" name="dienthoaiSamSung">SamSung
+                <input type="radio" name="dienthoaiOppo">Oppo
+                <input type="radio" name="dienthoaixiaomi">xiaomi</p></span>
+        </div>
         <div id="list_container">
+            <ul class="motor_list">
+                <li class="product">
+                    <a href="../WEb/chitiet/iPhone/iPhone14ProMax.html"><img src="../picture/iPhone/14promax.jpeg" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/iPhone/iPhone14ProMax.html" class="motor_name">iPhone 14 Pro Max</a>
+                    <p class="price">37.000.000 VNĐ</p>
+                    <a href="../WEb/chitiet/iPhone/iPhone14ProMax.html" class="thaotac"><button class="buynow2">Mua</button></a>
+                </li>
+                <li class="product">
+                    <a href="../WEb/chitiet/iPhone/iPhone13ProMax.html"><img src="../picture/iPhone/13 pro max.png" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/iPhone/iPhone13ProMax.html" class="motor_name">iPhone 13 Pro Max</a>
+                    <p class="price">27.000.000 VNĐ</p>
+                    <a href="../WEb/chitiet/iPhone/iPhone13ProMax.html" class="thaotac"><button class="buynow2">Mua</button></a>
+                </li>
+                <li class="product">
+                    <a href="../WEb/chitiet/iPhone/iPhone12ProMax.html"><img src="../picture/iPhone/12 pro max.png" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/iPhone/iPhone12ProMax.html" class="motor_name">iPhone 12 Pro Max</a>
+                    <p class="price">20.300.000 VNĐ</p>
+                    <a href="../WEb/chitiet/iPhone/iPhone12ProMax.html" class="thaotac"><button class="buynow2">Mua</button></a>
+                </li>
+                <li class="product">
+                    <a href="../WEb/chitiet/iPhone/iPhone11ProMax.html"><img src="../picture/iPhone/11 pro max.png" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/iPhone/iPhone11ProMax.html" class="motor_name">iPhone 11 Pro Max</a>
+                    <p class="price">14.000.000 VNĐ</p>
+                    <a href="../WEb/chitiet/iPhone/iPhone11ProMax.html" class="thaotac"><button class="buynow2">Mua</button></a>
+                </li>
+            </ul>
+            <br>
+            <ul class="motor_list">
+                <li class="product">
+                    <a href="../WEb/chitiet/iPhone/iPhone13.html"><img src="../picture/iPhone/Iphone 13.jpg" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/iPhone/iPhone13.html" class="motor_name">iPhone 13</a>
+                    <p class="price">18.000.000 VNĐ</p>
+                    <a href="../WEb/chitiet/iPhone/iPhone13.html" class="thaotac"><button class="buynow2">Mua</button></a>
+                </li>       
+                <li class="product">
+                    <a href="../WEb/chitiet/iPhone/iPhoneXSMax.html"><img src="../picture/iPhone/iphone-xs-max-gold.jpg" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/iPhone/iPhoneXSMax.html" class="motor_name">iPhone Xs Max</a>
+                    <p class="price">8.500.000 VNĐ</p>
+                    <a href="../WEb/chitiet/iPhone/iPhoneXSMax.html" class="thaotac"><button class="buynow2">Mua</button></a>
+                </li>
+                <li class="product">
+                    <a href="../WEb/chitiet/iPhone/iPhone8Plus.html"><img src="../picture/iPhone/8  plus.jpg" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/iPhone/iPhone8Plus.html" class="motor_name">iPhone 8Plus</a>
+                    <p class="price">5.900.000 VNĐ</p>
+                    <a href="../WEb/chitiet/iPhone/iPhone8Plus.html" class="thaotac"><button class="buynow2">Mua</button></a>
+                </li>
+                <li class="product">
+                    <a href="../WEb/chitiet/iPhone/iPhone7Plus.html"><img src="../picture/iPhone/7 plus.jpg" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/iPhone/iPhone7Plus.html" class="motor_name">iPhone 7Plus</a>
+                    <p class="price">4.500.000 VNĐ</p>
+                    <a href="../WEb/chitiet/iPhone/iPhone7Plus.html" class="thaotac"><button class="buynow2">Mua</button></a>
+                </li>
+            </ul>
+            <br>
+            <ul class="motor_list">
+                <li class="product">
+                    <a href="../WEb/chitiet/Samsung/SamsungZFold4.html"><img src="../picture/samsung/SS-Zfold4.jpg" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/Samsung/SamsungZFold4.html" class="motor_name">SamSung Z-fold 4</a>
+                    <p class="price">38.000.000 VNĐ</p>
+                    <a href="../WEb/chitiet/Samsung/SamsungZFold4.html" class="thaotac"><button class="buynow2">Mua</button></a>
+                </li>
+                <li class="product">
+                    <a href="../WEb/chitiet/Samsung/SamsungZFlip4.html"><img src="../picture/samsung/SS-Zflip4.jpg" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/Samsung/SamsungZFlip4.html" class="motor_name">SamSung Z-flip 4</a>
+                    <p class="price">27.000.000 VNĐ</p>
+                    <a href="../WEb/chitiet/Samsung/SamsungZFlip4.html" class="thaotac"><button class="buynow2">Mua</button></a>
+                </li>
+                <li class="product">
+                    <a href="../WEb/chitiet/Samsung/SamsungS22Ultra.html"><img src="../picture/samsung/SS-S22Ultra.jpg" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/Samsung/SamsungS22Ultra.html" class="motor_name">SamSung S22 Ultra</a>
+                    <p class="price">31.000.000 VNĐ</p>
+                    <a href="../WEb/chitiet/Samsung/SamsungS22Ultra.html" class="thaotac"><button class="buynow2">Mua</button></a>
+
+                </li>
+                <li class="product">
+                    <a href="../WEb/chitiet/Samsung/SamsungS22Plus.html"><img src="../picture/samsung/SS-S22Plus.jpeg" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/Samsung/SamsungS22Plus.html" class="motor_name">SamSung S22 Plus</a>
+                    <p class="price">24.000.000 VNĐ</p>
+                    <a href="../WEb/chitiet/Samsung/SamsungS22Plus.html" class="thaotac"><button class="buynow2">Mua</button></a>
+
+                </li>
+            </ul>
+            <br>
+            <ul class="motor_list">
+                <li class="product">
+                    <a href="../WEb/chitiet/Samsung/SamsungS21Ultra.html"><img src="../picture/samsung/SS-S21Ultra.jpg" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/Samsung/SamsungS21Ultra.html" class="motor_name">SamSung S21 Ultra</a>
+                    <p class="price">21.000.000 VNĐ</p>
+                    <a href="../WEb/chitiet/Samsung/SamsungS21Ultra.html" class="thaotac"><button class="buynow2">Mua</button></a>
+
+                </li>       
+                <li class="product">
+                    <a href="../WEb/chitiet/Samsung/SamsungS21Plus.html"><img src="../picture/samsung/SS-S21Plus.jpg" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/Samsung/SamsungS21Plus.html" class="motor_name">SamSung S21 Plus</a>
+                    <p class="price">8.500.000 VNĐ</p>
+                    <a href="../WEb/chitiet/Samsung/SamsungS21Plus.html" class="thaotac"><button class="buynow2">Mua</button></a>
+
+                </li>
+                <li class="product">
+                    <a href="../WEb/chitiet/Samsung/SamSungZfold3.html"><img src="../picture/samsung/SS-Zfold3.jpg" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/Samsung/SamSungZfold3.html" class="motor_name">SamSung Z-fold 3</a>
+                    <p class="price">35.000.000 VNĐ</p>
+                    <a href="../WEb/chitiet/Samsung/SamSungZfold3.html" class="thaotac"><button class="buynow2">Mua</button></a>
+
+                </li>
+                <li class="product">
+                    <a href="chitiet/Samsung/SamSungZflip3.html"><img src="../picture/samsung/SS-Zflip3.jpg" alt="" class="sample"></a>
+                    <br>
+                    <a href="chitiet/Samsung/SamSungZflip3.html" class="motor_name">SamSung Z-flip 3</a>
+                    <p class="price">30,500,000 VNĐ</p>
+                    <a href="../WEb/chitiet/Samsung/SamSungZflip3.html" class="thaotac"><button class="buynow2">Mua</button></a>
+
+                </li>
+            </ul>
+            <br>
             <ul class="motor_list">
                 <li class="product">
                     <a href="../WEb/chitiet/Oppo/OppoFindX5Pro.html"><img src="../picture/oppo/oppo-findx5 pro.jpg" alt="" class="sample"></a>
@@ -203,7 +347,6 @@
                     <a href="../WEb/chitiet/Oppo/OppoReno6.html" class="motor_name">Oppo Reno 6</a>
                     <p class="price">10.300.000 VNĐ</p>
                     <a href="../WEb/chitiet/Oppo/OppoReno6.html" class="thaotac"><button class="buynow2">Mua</button></a>
-
                 </li>
                 <li class="product">
                     <a href="../WEb/chitiet/Oppo/OppoReno7.html"><img src="../picture/oppo/opporeno7.jpg" alt="" class="sample"></a>
@@ -249,15 +392,85 @@
 
                 </li>
             </ul>
+            <br>
+            <ul class="motor_list">
+                <li class="product">
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi12TPro.html"><img src="../picture/xiaomi/xiaomi-12tpro.jpg" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi12TPro.html" class="motor_name">Xiaomi 12t Pro</a>
+                    <p class="price">17.000.000 VNĐ</p>
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi12TPro.html" class="thaotac"><button class="buynow2">Mua</button></a>
+                </li>
+                <li class="product">
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi12T.html"><img src="../picture/xiaomi/xiaomi-12t.jpg" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi12T.html" class="motor_name">Xiaomi 12t</a>
+                    <p class="price">13.000.000 VNĐ</p>
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi12T.html" class="thaotac"><button class="buynow2">Mua</button></a>
+
+                </li>
+                <li class="product">
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi12t sr.html"><img src="../picture/xiaomi/xiaomi-12t sr.jpg" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi12t sr.html" class="motor_name">Xiaomi 12t Series</a>
+                    <p class="price">12.000.000 VNĐ</p>
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi12t sr.html" class="thaotac"><button class="buynow2">Mua</button></a>
+
+                </li>
+                <li class="product">
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi11TPro.html"><img src="../picture/xiaomi/xiaomi-11t pro.jpg" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi11TPro.html" class="motor_name">Xiaomi 11t Pro</a>
+                    <p class="price">14.000.000 VNĐ</p>
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi11TPro.html" class="thaotac"><button class="buynow2">Mua</button></a>
+
+                </li>
+            </ul>
+            <br>
+            <ul class="motor_list">
+                <li class="product">
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi11T.html"><img src="../picture/xiaomi/xiaomi-11t.jpg" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi11T.html" class="motor_name">Xiaomi 11t</a>
+                    <p class="price">11.000.000 VNĐ</p>
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi11T.html" class="thaotac"><button class="buynow2">Mua</button></a>
+
+                </li>       
+                <li class="product">
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi11TLite.html"><img src="../picture/xiaomi/xiaomi-11t lite.jpg" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi11TLite.html" class="motor_name">Xiaomi 11t Lite</a>
+                    <p class="price">10.000.000 VNĐ</p>
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi11TLite.html" class="thaotac"><button class="buynow2">Mua</button></a>
+
+                </li>
+                <li class="product">
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi remid note 11 pro.html"><img src="../picture/xiaomi/xiaomi-redmi-note-11-pro-5g-xam-thumb-600x600.jpg" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi remid note 11 pro.html" class="motor_name">Xiaomi Redmi Note 11 Pro</a>
+                    <p class="price">8.900.000 VNĐ</p>
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi remid note 11 pro.html" class="thaotac"><button class="buynow2">Mua</button></a>
+
+                </li>
+                <li class="product">
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi redmi note 10 pro.html"><img src="../picture/xiaomi/xiaomi-redmi-note-10-pro-thumb-vang-dong-600x600-600x600.jpg" alt="" class="sample"></a>
+                    <br>
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi redmi note 10 pro.html" class="motor_name">Xiaomi Redmi Note 10 Pro</a>
+                    <p class="price">7,500,000 VNĐ</p>
+                    <a href="../WEb/chitiet/Xiaomi/Xiaomi redmi note 10 pro.html" class="thaotac"><button class="buynow2">Mua</button></a>
+
+                </li>
+            </ul>
         </div>
-        <!--    <div id="next_btn">
+       <<!--  <div id="next_btn">
             <a href="#" class="desc_show_more">Xem thêm sản phẩm
                 <ion-icon class="dropdown-icon" name="chevron-down-outline"></ion-icon>
             </a>
         </div>-->
-    
     </div>
     </main>
+        
+
     <!-- footer -->
     <footer class="footer">
         <div class="grid">

@@ -19,17 +19,19 @@
         crossorigin="anonymous">
     </script>
     <script src="../script/script.js"></script>
+    <script src="../script/main.js"></script>
 </head>
 <body>
     <header>
         <div class="header-box">
             <!-- navigation bar -->
+            <IMG src="../picture/LOGO3.png">
             <ul class="nav-bar__list">
                 <li class="nav-bar__item">
                     <a class="nav-bar__item-link" href="menu.html">TRANG CHỦ</a>
                 </li>
                 <li class="nav-bar__item">
-                    <a class="nav-bar__item-link" href="../WEb/menu.html">SẢN PHẨM</a>
+                    <a class="nav-bar__item-link" href="../WEb/SanPham.html">SẢN PHẨM</a>
                     <div class="nav-bar__dropdown-icon">
                         <ion-icon name="chevron-down-outline"></ion-icon>
                     </div>
@@ -52,6 +54,9 @@
                 </li>
                 <li class="nav-bar__item">
                     <a class="nav-bar__item-link" href="gioithieu.html">GIỚI THIỆU</a>
+                </li>
+                <li class="nav-bar__item">
+                    <a class="nav-bar__item-link" href="sitemap.html">SITEMAP</a>
                 </li>
             </ul>
             <!-- phần bên phải bao gồm đăng nhập, đăng kí và search box -->
@@ -146,22 +151,37 @@
                     <a href="" class="search-btn">
                         <ion-icon name="search-outline"></ion-icon>
                     </a>
-
-                    <ul class="search-history__list">
-                        <li class="search-history__item">
-                            <span class="search-history__item-link">iPhone 14 Pro Max</span>
-                            <ion-icon class="search-history__item-close" name="close-outline"></ion-icon>
-                        </li>
-                        <li class="search-history__item">
-                            <span class="search-history__item-link">iPhone 13 Pro Max</span>
-                            <ion-icon class="search-history__item-close" name="close-outline"></ion-icon>
-                        </li>
-                        <li class="search-history__item">
-                            <span class="search-history__item-link">SamSung Z fold 4</span>
-                            <ion-icon class="search-history__item-close" name="close-outline"></ion-icon>
-                        </li>
-                    </ul>
-
+                </div>
+                <button id="cart">
+                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                    Giỏ Hàng
+                </button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Giỏ Hàng</h5>
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                <span class="cart-price cart-header cart-column">Giá</span>
+                                <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                            </div>
+                            <div class="cart-items">
+    
+                            </div>
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span class="cart-total-price">0VNĐ</span>
+                            </div>
+                        </div>
+    
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                            <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -171,79 +191,167 @@
     <!-- main -->
     <main>
         <img src="../picture/background1.jpg" alt="" class="banner">
-        <div id="motor_type">
-            <h4 class="ct_type">Hãng Máy</h4>
-            <br>
-            <ul class="menu">
-                <li class="menu_motor_type">
-                    <a href="../WEb/iphone.html"><img class="type" src="../picture/iPhone/14promax.jpeg" alt=""></a>
-                    <br>
-                    <a href="./iphone.html" class="ct_name">iPhone</a>
+        
+        <section class="wrapper">
+            <div id="motor_type">
+                <h4 class="ct_type">Hãng Máy</h4>
+                <br>
+                <ul class="menu">
+                    <li class="menu_motor_type">
+                        <a href="../WEb/iphone.html"><img class="type" src="../picture/logoiPhone.png" alt=""></a>
+                        <br>
+                        <a href="./iphone.html" class="ct_name">iPhone</a>
+                    </li>
+                    <li class="menu_motor_type">
+                        <a href="../WEb/samSung.html"><img src="../picture/logoSamSung.jpg" alt="" class="type"></a>
+                        <br>
+                        <a href="./samSung.html" class="ct_name">SamSung</a>
+                    </li>
+                    <li class="menu_motor_type">
+                        <a href="./xiaomi.html"><img src="../picture/logoXiaomi.jpg" alt="" class="type"></a>
+                        <br>
+                        <a href="./xiaomi.html" class="ct_name">Xiaomi</a>
+                    </li>
+                    <li class="menu_motor_type">
+                        <a href="./oppo.html"><img src="../picture/logoOppo.jpg" alt="" class="type"></a>
+                        <br>
+                        <a href="./oppo.html" class="ct_name">Oppo</a>
+                    </li>
+                </ul>
+                <h3 class="ct_list">Bạn có thể thích</h3>
+        <div class="products">
+            <ul>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="../picture/iPhone/14promax.jpeg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">iPhone 14 Pro Max</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">37000000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
                 </li>
-                <li class="menu_motor_type">
-                    <a href="../WEb/samSung.html"><img src="../picture/samsung/SS-Zfold4.jpg" alt="" class="type"></a>
-                    <br>
-                    <a href="./samSung.html" class="ct_name">SamSung</a>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="../picture/iPhone/13 pro max.png"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">iPhone 13 Pro Max</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">27000000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
                 </li>
-                <li class="menu_motor_type">
-                    <a href="./xiaomi.html"><img src="../picture/xiaomi/xiaomi-12tpro.jpg" alt="" class="type"></a>
-                    <br>
-                    <a href="./xiaomi.html" class="ct_name">Xiaomi</a>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="../picture/samsung/SS-Zfold4.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">SamSung Z-fold 4</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">38000000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
                 </li>
-                <li class="menu_motor_type">
-                    <a href="./oppo.html"><img src="../picture/oppo/oppo-findx5 pro.jpg" alt="" class="type"></a>
-                    <br>
-                    <a href="./oppo.html" class="ct_name">Oppo</a>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="../picture/oppo/oppo-findx5 pro.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Oppo Find X5 Pro</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">29000000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="../picture/xiaomi/xiaomi-12tpro.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">xiaomi 12t Pro</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">17000000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="../picture/samsung/SS-Zflip4.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">SamSung Zflip4</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">27000000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="../picture/samsung/SS-Zfold3.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">SamSung Z-fold 3</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">35000000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="../picture/samsung/SS-Zflip3.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Module IOT ESP8266 ESP-12E CH340 V3</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">30500000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
                 </li>
             </ul>
-            <h3 class="ct_list">Bạn có thể thích</h3>
-            <div class="list_container">
-                <ul class="motor_list">
-                    <li class="product">
-                        <a href="../WEb/chitiet/iPhone/iPhone14ProMax.html"><img src="../picture/iPhone/14promax.jpeg" alt="" class="sample"></a>
-                        <a href="../WEb/chitiet/iPhone/iPhone14ProMax.html" class="motor_name">iPhone 14 Pro Max</a>
-                        <p class="price">37.000.000 VNĐ</p>
-                    </li>
-                    <li class="product">
-                        <a href="../WEb/chitiet/iPhone/iPhone13ProMax.html"><img src="../picture/iPhone/13 pro max.png" alt="" class="sample"></a>
-                        <a href="../WEb/chitiet/iPhone/iPhone13ProMax.html" class="motor_name">iPhone 13 Pro Max</a>
-                        <p class="price">27.000.000 VNĐ</p>
-                    </li>
-                    <li class="product">
-                        <a href="../WEb/chitiet/Samsung/SamsungZFold4.html"><img src="../picture/samsung/SS-Zfold4.jpg" alt="" class="sample"></a>
-                        <a href="../WEb/chitiet/Samsung/SamsungZFold4.html" class="motor_name">SamSung Z fold 4</a>
-                        <p class="price">38.000.000 VNĐ</p>
-                    </li>
-                    <li class="product">
-                        <a href="../WEb/chitiet/Oppo/OppoFindX5Pro.html"><img src="../picture/oppo/oppo-findx5 pro.jpg" alt="" class="sample"></a>
-                        <a href="../WEb/chitiet/Oppo/OppoFindX5Pro.html" class="motor_name">Oppo Findx5 Pro</a>
-                        <p class="price">29.000.000 VNĐ</p>
-                    </li>
-                </ul>
-                <br>
-                <ul class="motor_list">
-                    <li class="product">
-                        <a href="../WEb/chitiet/Xiaomi/Xiaomi12TPro.html"><img src="../picture/xiaomi/xiaomi-12tpro.jpg" alt="" class="sample"></a>
-                        <a href="../WEb/chitiet/Xiaomi/Xiaomi12TPro.html" class="motor_name">Xiaomi mi 12t Pro</a>
-                        <p class="price">17.000.000 VNĐ</p>
-                    </li>       
-                    <li class="product">
-                        <a href="../WEb/chitiet/Xiaomi/Xiaomi12T.html"><img src="../picture/xiaomi/xiaomi-12t.jpg" alt="" class="sample"></a>
-                        <a href="../WEb/chitiet/Xiaomi/Xiaomi12T.html" class="motor_name">Xiaomi mi 12t</a>
-                        <p class="price">13.000.000 VNĐ</p>
-                    </li>
-                    <li class="product">
-                        <a href="../WEb/chitiet/Oppo/OppoReno7.html"><img src="../picture/oppo/opporeno7.jpg" alt="" class="sample"></a>
-                        <a href="../WEb/chitiet/Oppo/OppoReno7.html" class="motor_name">Oppo reno 7</a>
-                        <p class="price">9.500.000 VNĐ</p>
-                    </li>
-                    <li class="product">
-                        <a href="../WEb/chitiet/Oppo/OppoReno6.html"><img src="../picture/oppo/opporeno6.jpg" alt="" class="sample"></a>
-                        <a href="../WEb/chitiet/Oppo/OppoReno6.html" class="motor_name">Oppo reno 6</a>
-                        <p class="price">10.300.000 VNĐ</p>
-                    </li>
-                </ul>
-            </div>
+        </div>
+    </section>
             <!--
                     <div id="next_btn">
                 <a href="#" class="desc_show_more">Xem thêm sản phẩm
