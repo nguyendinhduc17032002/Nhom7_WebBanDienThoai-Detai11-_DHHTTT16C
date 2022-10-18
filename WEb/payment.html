@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitemap</title>
+    <title>THANH TOÁN</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/style2.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="../font/themify-icons-font/themify-icons/themify-icons.css">
@@ -20,18 +19,19 @@
         crossorigin="anonymous">
     </script>
     <script src="../script/script.js"></script>
+    <script src="../script/main.js"></script>
 </head>
 <body>
     <header>
         <div class="header-box">
             <!-- navigation bar -->
-            <img src="../picture/LOGO3.png">  
+            <IMG src="../picture/LOGO3.png">
             <ul class="nav-bar__list">
                 <li class="nav-bar__item">
                     <a class="nav-bar__item-link" href="menu.html">TRANG CHỦ</a>
                 </li>
                 <li class="nav-bar__item">
-                    <a class="nav-bar__item-link" href="menu.html">SẢN PHẨM</a>
+                    <a class="nav-bar__item-link" href="../WEb/SanPham.html">SẢN PHẨM</a>
                     <div class="nav-bar__dropdown-icon">
                         <ion-icon name="chevron-down-outline"></ion-icon>
                     </div>
@@ -154,45 +154,92 @@
                     <a href="" class="search-btn">
                         <ion-icon name="search-outline"></ion-icon>
                     </a>
-
-                    <ul class="search-history__list">
-                        <li class="search-history__item">
-                            <span class="search-history__item-link">iPhone 14 Pro Max</span>
-                            <ion-icon class="search-history__item-close" name="close-outline"></ion-icon>
-                        </li>
-                        <li class="search-history__item">
-                            <span class="search-history__item-link">iPhone 13 Pro Max</span>
-                            <ion-icon class="search-history__item-close" name="close-outline"></ion-icon>
-                        </li>
-                        <li class="search-history__item">
-                            <span class="search-history__item-link">SamSung Z fold 4</span>
-                            <ion-icon class="search-history__item-close" name="close-outline"></ion-icon>
-                        </li>
-                    </ul>
-
                 </div>
-
-            </div>
-        </div>
     </header>
     
     <!-- main -->
     <main>
-        <br>
-        <div class="phone-price">Sitemap</div>
-        <br>
-        <ul>
-        <li class="sitemap"><a href="menu.html">Trang chủ</a></li>
-        <li class="sitemap"><a href="SanPham.html">Sản phẩm</a></li>
-            <ul class="sitemap">
-                <li><a href="iPhone.html">Iphone</a></li>
-                <li><a href="samSung.html">SamSung</a></li>
-                <li><a href="xiaomi.html">Xiaomi</a></li>
-                <li><a href="oppo.html">Oppo</a></li>
-            </ul>
-        <li class="sitemap"><a href="../WEb/payment.html"></a>Thanh toán</li>
-        <li class="sitemap"><a href="sitemap.html">Sitemap</a></li>
-        </ul>
+        <section class="cart">
+        <!--<div class="container-x">
+                <div class="cart-top-wrap">
+                    <div class="cart-top">
+                        <div class="cart-top-cart ">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="cart-top">
+                            <div class="cart-top-cart">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="cart-top">
+                                <div class="cart-top-cart">
+                                    <i class="fas fa-money-check-alt"></i>
+                                </div>
+                    </div>
+                </div   
+            </div>--> 
+            <div class="contrainer-x">
+                    <div class="cart-content">
+                        <div class="cart-content-left">
+                            <table>
+                                <tr>
+                                    <th>Sản Phẩm</th>
+                                    <th>Tên Sản Phẩm</th>
+                                    <th>SL</th>
+                                    <th>Thành Tiền (VNĐ)</th>
+                                    <th>Xóa</th>
+                                </tr>
+                                <tr>
+                                    <td><img src="../picture/iPhone/14promax.jpeg" alt=""></td>
+                                    <td><p>iPhone 14 Pro Max</p></td>
+                                    <td><input type="number" value="1" min="1"></td>
+                                    <td><p>37.000.000</p></td>
+                                    <td><span>X</span></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../picture/samsung/SS-Zfold4.jpg" alt=""></td>
+                                    <td><p>SamSungZ-fold 4</p></td>
+                                    <td><input type="number" value="1" min="1"></td>
+                                    <td><p>38.000.000</p></td>
+                                    <td><span>X</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="cart-content-right">
+                            <table>
+                                <tr>
+                                    <th colspan="2">TỔNG TIỀN</th>
+                                </tr>
+                                <TR>
+                                    <td>TỔNG SẨN PHẨM</td>
+                                    <TD>2</TD>
+                                </TR>
+                                <tr>
+                                    <td>TỔNG TIỀN HÀNG</td>
+                                    <td><p>75.000.000 <sub>VNĐ</sub></p></td>
+                                </tr>
+                                <tr>
+                                    <td>TẠM TÍNH</td>
+                                    <td>
+                                        <p style="color: #000; font-weight:bold;">75.000.000<sub>VNĐ</sub></p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="cart-content-right-text">
+                                <p>Hoàn tiền lên tới 1,5% cho hóa đơn từ 20.000.000(VNĐ) trở lên và 3% cho hóa đơn từ 80.000.000(VNĐ)</p>
+                            </div>
+                            <div class="cart-content-right-button">
+                                <button>Tiếp Tục Mua Sắm</button>
+                                <button>Thanh Toán</button>
+                            </div>
+                            <div class="cart-content-right-dangnhap">
+                                <p>Tài Khoản DienThoaiGiare</p>
+                                <p>Hãy <a>Đăng Nhập</a> Tài Khoản Của Bạn Để Được Tích Điểm Thành Viên</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        
     </main>
         
 
